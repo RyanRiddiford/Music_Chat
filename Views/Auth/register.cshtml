@@ -1,0 +1,31 @@
+﻿
+
+<div class="register-content">
+<h1>Register</h1>
+
+
+                <form asp-action="RegisterRequest" asp-controller="Auth" enctype="multipart/form-data">
+            <div class="form-group">
+                <label class="control-label">Email</label>
+                <input name="email" for="email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Username</label>
+                <input name="username" for="username" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Profile Image <span class="text-danger" style="font-style:italic">(Must be .jpg format)</span></label>
+                <input name="file" type="file" accept=".jpg" for="file" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Password</label>
+                <input for="Password" id="Password" name="password" type="password" class="form-control"
+                       data-val="true" data-val-required="The Password field is required." />
+                @Html.ValidationMessage("Password", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register" class="btn btn-primary" />
+            </div>
+            @Html.ValidationMessage("RegisterFailed", new { @class = "text-danger" })
+        </form>
+</div>

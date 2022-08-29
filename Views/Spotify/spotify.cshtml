@@ -1,0 +1,463 @@
+﻿@using music_chat.Models.ResponseModel;
+@model music_chat.Models.ViewModel.PlaybackViewModel;
+
+
+
+
+
+    @if (Context.Session.GetString("access_token") != null)
+    {
+
+        <div class="container-column-display">
+
+<div class="web-player flex-column-item">
+    
+       <div class="web-player-header">
+<img class="spotify-logo" src="https://myapp-a3-cloud.s3.ap-southeast-2.amazonaws.com/app-images/spotify-attribution.PNG">
+    <h1>Spotify Web Player</h1>
+     
+    </div>
+    <div class="web-player-visual">
+        <div id="wp-artist-name"></div>
+        <div id="wp-track-name"></div>
+    </div>
+    <div class="web-player-toolbar">
+        <div class="flex-row-item">
+            <label for="volume" >Volume</label>
+        <input name="volume" type="range" id="volume" min="0" max="1" step="0.01" />
+        </div>
+
+        <div class="flex-row-item">
+<button id="prev">Restart Track</button>
+        </div>
+        <div class="flex-row-item">
+<button id="togglePlay">Toggle Play</button>
+        </div>
+        
+    
+
+
+        </div>
+
+
+
+
+
+  
+
+
+</div>
+
+    <div class="spotify-searcher flex-column-item">
+
+        <h1>Spotify Searcher</h1>
+
+        <div class="spotify-searcher-kind">
+        <h2>Track Search</h2>
+
+        <form class="search-form" asp-action="SearchTracks" asp-controller="Spotify" method="get">
+            <div class="form-group search-input">
+                <input type="text" name="input" class="form-control" />
+                @Html.ValidationMessage("EmptyForm", new { @class = "text-danger" })
+            </div>
+            <div class="form-group search-button">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+
+        </form>
+        </div>
+
+
+        <div class="spotify-searcher-kind">
+        <h2>Album Search</h2>
+
+        <form class="search-form" asp-action="SearchAlbums" asp-controller="Spotify" method="get">
+            
+            <div class="form-group search-input">
+                <input type="text" name="input" class="form-control" />
+                @Html.ValidationMessage("EmptyForm", new { @class = "text-danger" })
+            </div>
+            <div class="form-group search-button">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+
+
+        </form>
+        </div>
+
+        <div class="spotify-searcher-kind">
+        <h2>Artist Search</h2>
+
+        <form class="search-form" asp-action="SearchArtists" asp-controller="Spotify" method="get">
+            <div class="form-group search-input">
+                <input type="text" name="input" class="form-control" />
+                @Html.ValidationMessage("EmptyForm", new { @class = "text-danger" })
+            </div>
+            <div class="form-group search-button">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+
+
+        </form>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+            <div id="device-to-use"></div>
+
+
+        @if(Model != null)
+        {
+
+
+
+           
+                var trackR = Model.TrackSearchResults;
+                var albumR = Model.AlbumSearchResults;
+            var artistR = Model.ArtistSearchResults;
+
+            
+
+                <div class="spotify-search-results flex-column-item">
+
+<div class="spotify-search-results-header">
+<img class="spotify-logo" src="https://myapp-a3-cloud.s3.ap-southeast-2.amazonaws.com/app-images/spotify-attribution.PNG">
+                    @if(trackR != null)
+                    {
+                     <h1>Track Results</h1>  
+                    }
+                    else if (albumR != null)
+                    {
+                         <h1>Album Results</h1>  
+                    }
+                    else if (artistR != null)
+                    {
+                         <h1>Artist Results</h1>  
+                    }
+                   
+</div>
+
+<ul class="search-results-list">
+
+                @if (trackR != null)
+                {
+                    
+
+                    @if (trackR != null)
+                    foreach(var song in Model.TrackSearchResults!.items)
+            {
+                <li class="search-results-item">
+
+                    <div class="search-results-text-component">
+                    <div class="item-name search-item-attribute">
+                        Track: @song.name
+                    </div>
+
+                    <div class="item-artist-name search-item-attribute">
+                        Artist: @song.artists.FirstOrDefault()!.name
+                    </div>
+                    </div>
+
+
+                    <div class="search-results-button-component">
+
+                    <button class="play-track-button search-item-attribute btn-btn-primary" onclick="PlayNewSong('@song.uri', '@Context.Session.GetString("access_token")', '@song.name', '@song.artists.FirstOrDefault()!.name')">Play Track</button>
+
+                    <div class="item-suggest search-item-attribute">
+            <form asp-action="SuggestSong" asp-controller="Spotify" method="post">
+            <div class="form-group">
+                <input type="hidden" name="trackName" value="@song.name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="@song.id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="href" value="@song.href" class="form-control" />
+            </div>
+      
+            <div class="form-group">
+                <input type="hidden" name="uri" value="@song.uri" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="albumName" value="@song.album.name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="artistName" value="@song.artists.FirstOrDefault()!.name" class="form-control" />
+            </div>
+      <div class="form-group">
+                <input type="submit" value="Suggest Track" class="btn btn-primary suggest-button" />
+            </div>
+        </form>
+                    </div>
+                    </div>
+
+                </li>
+            }
+                }
+              
+                
+                @if (artistR != null)
+                {
+
+                        @if (artistR != null)
+                foreach(var artist in artistR.items)
+                {
+                    
+                                    <li class="artist-item search-results-item">
+
+                                        <div class="search-results-artist-left">
+                        <div class="artist-image search-item-attribute">
+                                            @if (artist.images != null)
+                                            {
+                                                <img class="artist-image-img" src="@artist.images.FirstOrDefault().url">
+                                            } else
+                                            {
+                                                 <div class="artist-image-img" style="background-color:black;">
+
+                                                 </div>
+                                            }
+
+   
+                        </div>
+
+                    <div class="item-name search-item-attribute">
+                        @artist.name
+                    </div>
+                                        </div>
+
+
+
+                    <div class="item-suggest search-item-attribute">
+            <form asp-action="SuggestArtist" asp-controller="Spotify" method="post">
+            <div class="form-group">
+                <input type="hidden" name="artistName" value="@artist.name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="@artist.id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="href" value="@artist.href" class="form-control" />
+            </div>
+      
+            <div class="form-group">
+                <input type="hidden" name="uri" value="@artist.uri" class="form-control" />
+            </div>
+      <div class="form-group">
+                <input type="submit" value="Suggest Artist" class="btn btn-primary suggest-button" />
+            </div>
+        </form>
+                    </div>
+                </li>
+
+                }
+
+                }
+                
+
+                
+               @if (albumR != null)
+                {
+
+                @if (albumR != null)
+                @foreach(var album in Model.AlbumSearchResults!.items)
+                {
+                    
+                    <li class="album-item search-results-item">
+
+
+                        <div class="search-results-artist-left">
+
+                        <div class="artist-image search-item-attribute">
+                                            @if (album.images != null)
+                                            {
+                                                if (album.images.Length > 0)
+                                                {
+                                                    <img class="artist-image-img" src="@album.images?.FirstOrDefault()?.url">
+                                                } else
+                                            {
+                                                 <div class="artist-image-img" style="background-color:black;">
+
+                                                 </div>
+                                            }
+                                                
+                                            } else
+                                            {
+                                                 <div class="artist-image-img" style="background-color:black;">
+
+                                                 </div>
+                                            }
+
+                        </div>
+
+                        <div class="search-results-text-component">
+                    <div class="item-name search-item-attribute">
+                        @album.name
+                    </div>
+                    <div class="item-popularity search-item-attribute">
+                        @album.artists!.FirstOrDefault()!.name
+                            </div>
+
+                        </div>
+                   
+                        </div>
+
+
+
+                    <div class="item-suggest search-item-attribute">
+            <form asp-action="SuggestAlbum" asp-controller="Spotify" method="post">
+            <div class="form-group">
+                <input type="hidden" name="albumName" value="@album.name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="id" value="@album.id" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="href" value="@album.href" class="form-control" />
+            </div>
+      
+            <div class="form-group">
+                <input type="hidden" name="uri" value="@album.uri" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="artistName" value="@album.artists!.FirstOrDefault()!.name" class="form-control" />
+            </div>
+      <div class="form-group">
+                <input type="submit" value="Suggest Album" class="btn btn-primary suggest-button" />
+            </div>
+        </form>
+                    </div>
+                </li>
+
+                }
+
+                }
+
+                
+                
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+</ul>
+    </div>
+        }
+
+
+
+        </div>
+
+
+
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script type="text/javascript">
+
+
+
+        window.onSpotifyWebPlaybackSDKReady = () => {
+
+            const token = '@Context.Session.GetString("access_token")';
+            const player = new Spotify.Player({
+    name: 'Music Chat Player',
+    getOAuthToken: cb => { cb(token); },
+    volume: 0.5
+  });
+
+    // Ready
+    player.addListener('ready', ({ device_id }) => {
+
+        //let songUri = document.getElementById('song-to-play');
+        let deviceToUse = document.getElementById('device-to-use');
+
+        deviceToUse.value = device_id;
+
+    console.log('Ready with Device ID', device_id);
+  });
+
+  // Not Ready
+  player.addListener('not_ready', ({ device_id }) => {
+    console.log('Device ID has gone offline', device_id);
+  });
+
+  player.addListener('initialization_error', ({ message }) => { 
+      console.error(message);
+  });
+
+  player.addListener('authentication_error', ({ message }) => {
+      console.error(message);
+  });
+
+  player.addListener('account_error', ({ message }) => {
+      console.error(message);
+  });
+
+
+  player.connect();
+  player.activateElement();
+
+  document.getElementById('togglePlay').onclick = function() {
+  player.togglePlay();
+};
+
+document.getElementById('prev').onclick = function() {
+    player.previousTrack();
+};
+
+document.getElementById('volume').onchange = function(e) {
+ player.setVolume(e.target.value);
+};
+
+document.getElementById('close').onclick = function() {
+    player.pause();
+}
+
+
+
+
+
+
+}
+    </script>
+
+}
+    else
+    {
+
+        <div class="activator-prompt">
+        <h1>Activate Your Spotify Account</h1>
+
+               <form method="post" asp-action="Authenticate" asp-controller="Spotify">
+            <div class="form-group">
+                <input type="submit" value="Authenticate Spotify Account" class="btn btn-primary" />
+            </div>
+        </form>
+        </div>
+
+   }
+
+
+
+
+
+
+
+
+

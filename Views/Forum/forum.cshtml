@@ -1,0 +1,56 @@
+﻿@using music_chat.Models.ViewModel
+@using music_chat.Helpers;
+@model List<ForumViewModel>;
+
+
+<div class="chat-component-container">
+<h1>Forum Chat</h1>
+    <div class="chat-message-display">
+
+       
+        @foreach (ForumViewModel ViewModelItem in Model)
+        {
+
+            <div class="post">
+                    <div class="post-header">
+                        <div class="post-author-image">
+                        <img class="post-author-image-img" src="@ViewModelItem.AuthorProfileImage">
+                        </div>
+                        <div class="post-header-text-items">
+                        <div class="post-author-name">
+                            <span>Author: @ViewModelItem.AuthorUsername</span>
+                        </div>
+       <div class="post-timestamp">
+                            <span> Posted On: @TimeZoneInfo.ConvertTimeFromUtc(ViewModelItem.timestamp, TimeZoneInfo.FindSystemTimeZoneById("AUS Eastern Standard Time"))</span>
+                        </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="post-content">
+                        @ViewModelItem.Content
+                    </div>  
+            </div>
+
+
+
+        }
+
+    </div>
+    <div class="chat-message-input">
+
+
+        <form class="post-form" asp-action="PostRequest" asp-controller="Forum">
+            <div class="form-group">
+                <textarea name="content" for="Content" class="form-control post-input" rows="4" cols="50"></textarea>        
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Post" class="btn btn-primary post-button" />
+            </div>
+            @Html.ValidationMessage("PostFailed", new { @class = "text-danger" })
+        </form>
+    </div>
+
+</div>
+

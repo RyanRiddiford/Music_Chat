@@ -1,0 +1,105 @@
+﻿/*FORUM STYLING*/
+.chat-component-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.chat-message-display {
+    width: 70vw;
+    height: 70vh;
+    overflow-y: scroll;
+    background-color: whitesmoke;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 0;
+}
+
+.chat-message-input {
+    width: 70vw;
+    height: 10vh;
+    background-color: #1A2129;
+    padding: 1%;
+    margin-top: 0;
+    border: 5px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.post-button {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 5px;
+    margin-left: 20%;
+    min-width: fit-content;
+}
+
+.post-input {
+    width: 50vw;
+    height: 5vh;
+    overflow-y: scroll;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 1%;
+    border: 5px groove #E2E2E2;
+    border-radius: 5px;
+}
+
+.post-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    background-color: #E2E2E2;
+    width: 60vw;
+    border-left: 5px groove #E2E2E2;
+    border-right: 5px groove #E2E2E2;
+    height: fit-content;
+}
+
+.post-author-image-img {
+    min-height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.post-author-name {
+    font-weight: bold;
+}
+
+.post-timestamp {
+    font-weight: bold;
+}
+
+.post-header-text-items {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 1%;
+}

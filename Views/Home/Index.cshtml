@@ -1,0 +1,38 @@
+﻿@using music_chat.Helpers;
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+
+
+
+
+
+
+@if (@Context.Session.GetString("image") != null)
+{
+        <div class="user-details-container">
+
+        <h1>User Details</h1>
+       
+        
+        <img id="profile-image" src="@Context.Session.GetString("image")"/>
+
+        <div>
+            <span>Username: @Context.Session.GetString("username")</span>
+        </div>
+        <div>
+            <span>Email: @Context.Session.GetString("email")</span>
+        </div>
+
+
+    </div>
+}
+
+
+

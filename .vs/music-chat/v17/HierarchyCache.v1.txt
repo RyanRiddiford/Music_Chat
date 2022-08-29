@@ -1,0 +1,341 @@
+﻿++Solution 'music-chat' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:music-chat.sln
+++music-chat
+i:{00000000-0000-0000-0000-000000000000}:music-chat
+++Connected Services 
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1621
+++Dependencies
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1620
+++Properties
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\properties\
+++wwwroot
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\
+++css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\css\
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\
+++forum.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\css\forum.css
+++home.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\css\home.css
+++site.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\css\site.css
+++spotify.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\css\spotify.css
+++js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\js\
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\
+++favicon.ico
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\favicon.ico
+++Common
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\common\
+++SpotifyToken.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\common\spotifytoken.cs
+++Controllers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\controllers\
+++AuthController.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\controllers\authcontroller.cs
+++ForumController.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\controllers\forumcontroller.cs
+++HomeController.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\controllers\homecontroller.cs
+++SpotifyController.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\controllers\spotifycontroller.cs
+++Helpers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\helpers\
+++AWSConstants.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\helpers\awsconstants.cs
+++SpotifyConstants.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\helpers\spotifyconstants.cs
+++Migrations
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\migrations\
+++20220513003207_InitialMigration.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\migrations\20220513003207_initialmigration.cs
+++AppDbContextModelSnapshot.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\migrations\appdbcontextmodelsnapshot.cs
+++Models
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\
+++DTO
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\dto\
+++RequestModel
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\requestmodel\
+++ResponseModel
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\
+++ViewModel
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\viewmodel\
+++AppDbContext.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\appdbcontext.cs
+++ErrorViewModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\errorviewmodel.cs
+++Views
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\
+++Auth
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\auth\
+++Forum
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\forum\
+++forum.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\forum\forum.cshtml
+++Home
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\home\
+++Index.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\home\index.cshtml
+++Shared
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\shared\
+++_Layout.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\shared\error.cshtml
+++Spotify
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\spotify\
+++spotify.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\spotify\spotify.cshtml
+++_ViewImports.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\_viewstart.cshtml
+++appsettings.json
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\appsettings.json
+++aws-beanstalk-tools-defaults.json
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\aws-beanstalk-tools-defaults.json
+++Dockerfile
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\dockerfile
+++Program.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\program.cs
+++No service dependencies discovered
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1622
+++Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:analyzers
+++Frameworks
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:frameworks
+++Packages
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:packages
+++launchSettings.json
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\properties\launchsettings.json
+++site.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\js\site.js
+++bootstrap
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\
+++jquery
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\
+++jquery-validation
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation-unobtrusive\
+++20220513003207_InitialMigration.Designer.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\migrations\20220513003207_initialmigration.designer.cs
+++Account.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\dto\account.cs
+++Login.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\dto\login.cs
+++Post.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\dto\post.cs
+++LoginRequestModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\requestmodel\loginrequestmodel.cs
+++PostRequestModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\requestmodel\postrequestmodel.cs
+++RegisterRequestModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\requestmodel\registerrequestmodel.cs
+++AlbumItems.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\albumitems.cs
+++AlbumSearchResults.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\albumsearchresults.cs
+++ArtistItems.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\artistitems.cs
+++ArtistSearchResults.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\artistsearchresults.cs
+++IItems.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\iitems.cs
+++ImageItem.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\imageitem.cs
+++TrackItems.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\trackitems.cs
+++TrackSearchResults.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\responsemodel\tracksearchresults.cs
+++ForumViewModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\viewmodel\forumviewmodel.cs
+++PlaybackViewModel.cs
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\models\viewmodel\playbackviewmodel.cs
+++login.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\auth\login.cshtml
+++register.cshtml
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\auth\register.cshtml
+++_Layout.cshtml.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\views\shared\_layout.cshtml.css
+++appsettings.Development.json
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\appsettings.development.json
+++AWSSDK.RDS.CodeAnalysis
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\users\ridde\.nuget\packages\awssdk.rds\3.7.13.5\analyzers\dotnet\cs\awssdk.rds.codeanalysis.dll
+++AWSSDK.S3.CodeAnalysis
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\users\ridde\.nuget\packages\awssdk.s3\3.7.8.27\analyzers\dotnet\cs\awssdk.s3.codeanalysis.dll
+++Microsoft.AspNetCore.Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\users\ridde\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.0-preview.3.22175.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\users\ridde\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0-preview.3.22175.4\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.3\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\microsoft.netcore.app
+++AWSSDK.Core (3.7.10.16)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1651
+++AWSSDK.Extensions.NETCore.Setup (3.7.2)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1645
+++AWSSDK.RDS (3.7.13.5)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1643
+++AWSSDK.S3 (3.7.8.27)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1649
+++Microsoft.EntityFrameworkCore (7.0.0-preview.3.22175.1)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1642
+++Microsoft.EntityFrameworkCore.Design (7.0.0-preview.3.22175.1)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1646
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.0-preview.3.22175.1)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1644
+++Npgsql (7.0.0-preview.3)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1652
+++Npgsql.EntityFrameworkCore.PostgreSQL (7.0.0-preview.3)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1650
+++SpotifyAPI.Web (6.2.2)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1653
+++Swashbuckle.AspNetCore (6.3.1)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1647
+++System.Configuration.ConfigurationManager (7.0.0-preview.3.22175.4)
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:>1648
+++dist
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\dist\
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\license.txt
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+++jquery.min.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{59f09dd7-8404-483d-bf9d-94785cb992de}:n:\bachelor of info tech\cloud\a3\repo\music-chat\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map

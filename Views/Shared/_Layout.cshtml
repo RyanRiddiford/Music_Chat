@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Chat</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    @*<link rel="stylesheet" href="~/music_chat.styles.css" asp-append-version="true" />*@
+    <link rel="stylesheet" href="~/css/forum.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/spotify.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Music Chat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+   
+
+
+                        @if(Context.Session.GetString("email") != null)
+                        {
+                        @* HOME*@
+                       
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        @*FORUM*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Forum" asp-controller="Forum" asp-action="Forum">Forum</a>
+                        </li>
+
+                        @*MUSIC*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Spotify" asp-controller="Spotify" asp-action="Spotify">Spotify</a>
+                        </li>
+
+                        @*LOGOUT*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Auth" asp-controller="Auth" asp-action="Logout">Logout</a>
+                            </li>
+
+                        } else
+                        {                           
+                       @* AUTH*@
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Auth" asp-controller="Auth" asp-action="Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Auth" asp-controller="Auth" asp-action="Register">Register</a>
+                        </li>
+                        }
+
+                        
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
